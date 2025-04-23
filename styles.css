@@ -1,0 +1,461 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+/* Blurred background layer */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('background.png') no-repeat center center / cover;
+    filter: blur(5px);
+    transform: scale(1.1); /* Prevent visible blur edges */
+    z-index: 0;
+  }
+  
+  /* Keep header content above the blur */
+  header > * {
+    position: relative;
+    z-index: 1;
+  }
+
+/* Special Header Style for Subpages */
+.subpage-header {
+    background: url('background.png') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;    
+    padding: 20px; /* Adjust padding for a cleaner look */
+}
+
+/* Menu Styles */
+header .menu {
+    position: absolute;
+    top: 10px; /* Moved the menu up by 10px */
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none; /* Remove list-style for cleaner text links */
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem; /* Increased font size */
+    font-weight: 400; /* Less bold */
+    transition: color 0.3s ease;
+    text-transform: capitalize; /* Optionally add this for a more formal look */
+    padding: 0; /* Remove any padding */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+header .menu a:hover {
+    color: #9bf5fc; /* Hover color change only */
+}
+
+/* Header Title */
+header h1 {
+    font-size: 5rem; /* Increased font size for a more prominent header */
+    margin-bottom: 20px; /* Adjusted margin for spacing */
+}
+
+header p {
+    font-size: 1.6rem; /* Increased font size for the tagline */
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+    font-weight: 500;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Custom List Styling */
+.service-list {
+    display: grid;
+    gap: 10px;
+    text-align: left;
+    list-style: none;
+}
+
+.service-item {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-item::before {
+    content: '•';
+    color: #002c3f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #9bf5fc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008393;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #002c3f;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 3rem; /* Reduced font size for mobile */
+    }
+
+    header p {
+        font-size: 1.2rem; /* Adjusted font size for mobile */
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    /* Keep the menu in the upper right corner on mobile */
+    header .menu {
+        position: absolute; /* Ensure the menu stays absolute */
+        top: 10px; /* Adjust for better alignment */
+        right: 20px;
+        flex-direction: row; /* Maintain horizontal layout on mobile */
+        gap: 20px; 
+    }
+
+    header .menu a {
+        font-size: 1.1rem;
+    }
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.bullet-points {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-style: italic;
+    color: #555;
+}
+
+.point {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.close-point {
+    padding: 0.1rem 0;
+    margin: 0.1rem 0;
+}
+
+.cta-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes teeter-totter {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.cta-section h4 {
+    animation: growShrink 2s ease-in-out infinite;
+}
+
+.why-this-works {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.why-this-works li {
+    margin: 1rem 0;
+}
+
+.why-this-works strong {
+    color: #002c3f; /* Green color for emphasis */
+}
+
+.about-section {
+    text-align: left; /* Aligns text to the left */
+    color: #555; /* Sets text color to a medium gray */
+    font-size: 1.2rem; /* Sets font size to make it readable */
+    line-height: 1.6; /* Increases line height for better readability */
+    margin-bottom: 2rem; /* Adds space between sections */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* Larger font for section headers */
+    margin-bottom: 1rem; /* Adds space below the section header */
+}
+
+.about-section p {
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+}
+
+.about-section a {
+    color: #008393; /* Green color for links to stand out */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.about-section a:hover {
+    text-decoration: underline; /* Adds underline on hover for better accessibility */
+}
+
+.contact-section a {
+    color: #008393; /* Green color for links to stand out */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.contact-section a:hover {
+    text-decoration: underline; /* Adds underline on hover for better accessibility */
+}
+
+/* Stack Component for text scrolling */
+.stack-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .stack {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .stack-inner {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .stack span {
+    background: #f0f0f0;
+    border-radius: 1rem;
+    padding: 0.4rem 0.75rem;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+.tooltip-close-point {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position the tooltip above the item */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-close-point:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+  text-align: center; /* Ensures that text and inline elements are centered */
+  margin-top: 2em;
+}
+
+.clients-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.consult-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Automatically fill columns */
+  gap: 1em;
+  justify-items: center; /* Center items horizontally in grid cells */
+  align-items: center; /* Center items vertically in grid cells */
+}
+
+.consult-logo {
+  width: 100%; /* Make the image fill the available space */
+  height: 80px; /* Set a fixed height to ensure uniformity */
+  object-fit: contain; /* Preserve aspect ratio while fitting the logo */
+  display: block; /* Ensure block-level display for proper alignment */
+}
+
+/* Make TalentWell logo slightly larger */
+.consult-logo[alt="TalentWell"] {
+  height: 90px; /* Increase height for TalentWell to match size */
+}
+
+  
