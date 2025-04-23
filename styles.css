@@ -23,24 +23,26 @@ header {
     text-align: center;
     padding: 20px;
     overflow: hidden;
-  }
+}
 
 /* Blurred background layer */
 header::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('background.png') no-repeat center center / cover;
+    background: url('background.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the header */
     filter: blur(5px);
     transform: scale(1.1); /* Prevent visible blur edges */
     z-index: 0;
-  }
-  
-  /* Keep header content above the blur */
-  header > * {
+}
+
+/* Keep header content above the blur */
+header > * {
     position: relative;
     z-index: 1;
-  }
+}
+
 
 /* Special Header Style for Subpages */
 .subpage-header {
@@ -423,39 +425,14 @@ h3 {
     opacity: 1;
 }
 
-.clients-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers the content vertically */
-  justify-content: center; /* Centers the content horizontally */
-  text-align: center; /* Ensures that text and inline elements are centered */
-  margin-top: 2em;
-}
-
-.clients-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.consult-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Automatically fill columns */
-  gap: 1em;
-  justify-items: center; /* Center items horizontally in grid cells */
-  align-items: center; /* Center items vertically in grid cells */
-}
-
-.consult-logo {
-  width: 100%; /* Make the image fill the available space */
-  height: 80px; /* Set a fixed height to ensure uniformity */
-  object-fit: contain; /* Preserve aspect ratio while fitting the logo */
-  display: block; /* Ensure block-level display for proper alignment */
-}
-
-/* Make TalentWell logo slightly larger */
-.consult-logo[alt="TalentWell"] {
-  height: 90px; /* Increase height for TalentWell to match size */
-}
-
+.logo-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
   
+  .consult-logo {
+    height: 48px;
+  }
