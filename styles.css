@@ -436,3 +436,75 @@ h3 {
   .consult-logo {
     height: 48px;
   }
+
+.back-to-top-wrapper {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.back-to-top-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-to-top-button:hover {
+  background: #444;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #6fe1ec; /* Light blue, adjust to fit your design */
+    padding: 60px 20px;
+    text-align: center;
+    color: #333; /* Dark text color for contrast */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #002c3f; /* Matching header color */
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555; /* Slightly lighter text for readability */
+}
+
+#contact .contact-section a {
+    color: #008393; /* Matching your theme's green/blue color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact .contact-section a:hover {
+    color: #60bec5; /* Light blue hover effect */
+}
+
+#contact .back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008393;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#contact .back-to-top:hover {
+    background-color: #002c3f;
+}
+
