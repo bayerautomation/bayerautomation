@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andreas Bayer Contact Card</title>
+  <style>
+    body {
+      font-family: Helvetica;
+      background: #fbeeee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 370px;
+      max-width: 90vw;
+      overflow: hidden;
+      text-align: left;
+    }
+
+
+    .card img.header-image {
+      width: 100%;
+      display: block;
+      height: 200px;
+      /* LIMIT the height */
+      object-fit: cover;
+      /* Crop instead of stretching */
+    }
+
+    .card h1 {
+      margin: 16px 16px 4px;
+      font-size: 1.5rem;
+      font-weight: normal
+    }
+
+    .title {
+      margin: 10px 0 12px;
+    }
+
+    .title h2 {
+      margin: 0 16px 4px;
+      font-weight: normal;
+      color: #555;
+      font-size: 1.2rem;
+    }
+
+    .card p.subtitle {
+      color: #777;
+      font-size: 0.9rem;
+      margin: 4px 16px 16px;
+    }
+
+    .contact-info {
+      list-style: none;
+      padding: 0;
+      margin: 0 16px 16px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .contact-info li {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+    }
+
+    .contact-info li span {
+      margin-left: 10px;
+    }
+
+    .contact-info a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .save-button {
+      display: block;
+      margin: 16px auto;
+      background: #f45a57;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      width: fit-content;
+      /* or a fixed width like 200px */
+    }
+
+
+    .save-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .icon-circle {
+      width: 30px;
+      height: 30px;
+      background-color: #f45a57;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon-circle svg {
+      fill: white;
+      width: 14px;
+      height: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img class="header-image" src="business-card-image.avif" alt="Header Image" />
+    <h1>Andreas Bayer</h1>
+    <div class="title">
+      <h2>Founder & Principal Engineer</h2>
+      <h2>Bayer Automation</h2>
+    </div>
+    <p class="subtitle">Builder • Architect • Advisor</p>
+    <ul class="contact-info">
+      <li>
+        <div class="icon-circle">
+          <!-- Email Icon -->
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+            </path>
+          </svg>
+        </div>
+        <span><a href="mailto:andreas@bayerautomation.com">andreas@bayerautomation.com</a></span>
+      </li>
+      <li>
+        <div class="icon-circle">
+          <!-- Phone Icon -->
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z">
+            </path>
+          </svg>
+        </div>
+        <span><a href="tel:+14157101323">+1 (415) 710 1323</a></span>
+      </li>
+      <li>
+        <div class="icon-circle">
+          <!-- Website Icon -->
+          <svg viewBox="0 0 496 512">
+            <path
+              d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm64 32a32 32 0 1 0 64 0 32 32 0 1 0 -64 0zm384 0c0-13.3-10.7-24-24-24l-240 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l240 0c13.3 0 24-10.7 24-24z">
+            </path>
+          </svg>
+        </div>
+        <span><a href="https://bayerautomation.com" target="_blank">Visit our website</a></span>
+      </li>
+      <li>
+        <div class="icon-circle">
+          <!-- LinkedIn Icon -->
+          <svg viewBox="0 0 448 512">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+            </path>
+          </svg>
+        </div>
+        <span><a href="https://www.linkedin.com/in/andreas-bayer-7101323/" target="_blank">Connect on
+            LinkedIn</a></span>
+      </li>
+    </ul>
+    <a href="andreas-bayer.vcf" download="Andreas-Bayer.vcf" class="save-button">Save Contact</a>
+
+  </div>
+</body>
+
+</html>
