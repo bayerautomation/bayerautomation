@@ -1,219 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="https://bayerautomation.com/favicon-16x16.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="AI consulting for engineering teams drowning in slop and companies ready to introduce AI the right way. Hands-on guidance that increases velocity, not chaos." />
-    <meta name="keywords" content="AI consulting, AI development tools, AI team velocity, AI strategy, enterprise AI adoption, Bayer Automation" />
-    <meta name="author" content="Bayer Automation" />
-
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Bayer Automation | AI Consulting That Actually Increases Velocity">
-    <meta property="og:description" content="Stop the AI slop. Start shipping faster. Hands-on AI consulting for teams and companies ready to do AI right.">
-    <meta property="og:image" content="https://bayerautomation.com/open-graph-1200x630.png">
-    <meta property="og:url" content="https://bayerautomation.com">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card tags -->
-    <meta name="twitter:title" content="Bayer Automation | AI Consulting That Actually Increases Velocity">
-    <meta name="twitter:description" content="Stop the AI slop. Start shipping faster. Hands-on AI consulting for teams and companies ready to do AI right.">
-    <meta name="twitter:image" content="https://bayerautomation.com/twitter-card-1200x675.png">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://bayerautomation.com/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://bayerautomation.com/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://bayerautomation.com/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <title>Bayer Automation | AI Consulting That Increases Team Velocity</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Bayer Automation - AI Consulting for Engineering Teams",
-            "description": "Hands-on AI consulting that helps development teams increase velocity with AI tools and guides companies to identify and ship AI features that matter.",
-            "url": "https://bayerautomation.com",
-            "publisher": {
-                "@type": "Organization",
-                "name": "Bayer Automation",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://bayerautomation.com/logo.png",
-                    "width": 300,
-                    "height": 300
-                }
-            }
-        }
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const stack = document.getElementById("tech-stack");
-          const original = stack.querySelector(".stack-inner");
-          const clone = original.cloneNode(true);
-          stack.appendChild(clone);
-        });
-      </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bayer Automation | Website Under Construction</title>
+  <meta name="description" content="Bayer Automation — Financial Technology, Software Engineering, Risk & Compliance. Our website is being updated.">
+  <meta name="theme-color" content="#142b3b">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 32px 24px; background: #f7f7f2; color: #142b3b; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: 100%; max-width: 680px; padding: 40px 0; border-top: 3px solid #397c80; }
+    h1 { margin: 0 0 16px; font-size: clamp(2rem, 7vw, 3.5rem); letter-spacing: -.04em; font-weight: 600; }
+    .tagline { margin: 0 0 56px; color: #49616d; font-size: 1rem; line-height: 1.8; }
+    h2 { font-size: 1.3rem; font-weight: 500; margin: 0 0 12px; }
+    p { line-height: 1.7; }
+    a { color: #245f64; text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid #245f64; outline-offset: 5px; }
+    .contact { margin-top: 32px; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <h1>Bayer Automation</h1>
-        <p>AI consulting that fixes the slop and unlocks velocity</p>
-    </header>
-
-    <div class="section">
-        <h2>Your AI Problem Is My Specialty</h2>
-        <p>You started with ChatGPT, then committed to Cursor, Claude, or Copilot. Now your codebase is drowning in AI-generated slop. Or you haven't introduced agents and AI features yet and don't know where to start. Either way, you need someone who's actually shipped AI systems—and fixed AI disasters—in production.</p>
-        
-        <p><strong>I'm Andreas Bayer.</strong> I help engineering teams and companies introduce AI the right way: hands-on, strategic, and focused on actual velocity gains—not just generating more code.</p>
-    </div>
-
-    <div class="section" id="services">
-        <h2>Two Ways I Help</h2>
-        
-        <h3><i class="fas fa-exclamation-triangle"></i> Your Team's AI Velocity Dropped</h3>
-        <p><strong>The Problem:</strong> You adopted AI dev tools like Cursor, Claude, or Copilot. PRs got longer. Bugs multiplied. Code reviews became archaeology. Your devs are copy-pasting AI-generated code and calling it done. Velocity tanked.</p>
-        
-        <p><strong>What I Do:</strong></p>
-        <ul class="bullet-points">
-            <li>Audit your current AI tool usage and identify where slop enters the codebase</li>
-            <li>Establish AI-assisted development standards and quality gates</li>
-            <li>Train teams on effective prompting, testing, and review practices for AI-generated code</li>
-            <li>Implement governance: when to use AI, when not to, and how to catch bad outputs</li>
-            <li>Set up metrics to actually measure velocity improvement vs. code churn</li>
-        </ul>
-        
-        <p><strong>Result:</strong> Teams ship faster with higher quality. AI becomes a force multiplier, not a mess generator.</p>
-
-        <h3><i class="fas fa-compass"></i> Your Team Has Shadow AI—And It's Costing You</h3>
-        <p><strong>The Problem:</strong> You haven't officially adopted AI tools, but your engineers are using them anyway—personal Claude accounts, Cursor subscriptions, ChatGPT Plus. It's costing $150+ per engineer per month. Legal wants policies. IT wants approvals. Meanwhile, velocity is down because nobody's coordinating. You need to formalize AI adoption before the chaos gets worse.</p>
-        
-        <p><strong>What I Do:</strong></p>
-        <ul class="bullet-points">
-            <li>Assess the actual AI tools your team is using (officially or unofficially)</li>
-            <li>Design a coordinated AI tool strategy: what to standardize, what to allow, what to ban</li>
-            <li>Establish practical governance and policies that engineers will actually follow</li>
-            <li>Negotiate enterprise licenses and consolidate shadow subscriptions to reduce costs</li>
-            <li>Create shared practices so teams use AI as a coordinated unit, not isolated individuals</li>
-        </ul>
-        
-        <p><strong>Result:</strong> Lower costs, higher velocity, and a team that actually works together instead of 50 individuals doing their own thing.</p>
-    </div>
-
-    <div class="section">
-        <h2>How I Work</h2>
-        <p>I'm not a "strategy consultant" who hands you a deck and leaves. I'm a technical leader who gets in the code, reviews PRs, architects systems, and ships alongside your team.</p>
-        
-        <div class="cards">
-            <div class="card">
-                <h3>Hands-On</h3>
-                <p>I write code, review architecture, debug production issues, and teach by doing. If I'm guiding your team, I'm in your repos, your standups, and your incident channels.</p>
-            </div>
-            
-            <div class="card">
-                <h3>Practical</h3>
-                <p>No AI hype. No vendor pitches. Just: what works in production, what's worth building, and what's a waste of time. I've seen enough AI projects fail to know the difference.</p>
-            </div>
-            
-            <div class="card">
-                <h3>Fast</h3>
-                <p>Consulting engagements that actually ship. Whether it's a 2-week velocity audit or a 3-month AI adoption transformation, I move fast and deliver results you can measure.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="about">
-        <h2>About Me</h2>
-        <div class="about-section">
-            <p>I'm <a href="https://www.linkedin.com/in/bayerautomation/" target="_blank">Andreas Bayer</a>—a systems architect and engineering leader who's spent the last three years shipping AI systems in production and helping teams navigate the chaos of AI adoption.</p>
-            
-            <p>Before the AI wave, I spent 20+ years building and scaling systems at companies like Xoom (acquired by PayPal), MuleSoft (acquired by Salesforce for $6.5B), and as Co-Founder & CTO at Beam Solutions (acquired by Jumio). I've taken companies through IPOs, led engineering teams through acquisitions, and rebuilt legacy platforms more times than I can count.</p>
-            
-            <p>These days, I focus exclusively on AI consulting because it's where the biggest gap exists: companies rushing to adopt AI without understanding how to do it right. I work with teams drowning in AI-generated code and companies paralyzed by AI decisions.</p>
-            
-            <p><strong>What makes me different:</strong> I'm hands-on. I build, I ship, I debug. I teach by example, not by slides. And I care more about your team's velocity than selling you the next AI vendor solution.</p>
-        </div>
-
-        <h3>Writing</h3>
-        <ul class="bullet-points">
-            <li><a href="https://medium.com/@vifilio/the-year-everything-fell-apart-7ab28933f2fe" target="_blank"><strong>The Year Everything Fell Apart</strong></a> — A true story about what happens when teams adopt AI tools without coordination. Individual velocity up, team velocity down. Sound familiar?</li>
-            <li><a href="https://medium.com/@vifilio/ai-isnt-killing-creativity-it-s-killing-gatekeeping-ec0e0408f06e" target="_blank"><strong>AI Isn't Killing Creativity—It's Killing Gatekeeping</strong></a> — Why the backlash against AI tools is really about power, not principles.</li>
-        </ul>
-
-        <a href="#top" class="back-to-top">Back to top</a>
-    </div>
-        
-    <div class="section" id="contact">
-        <h2>Let's Fix Your AI Problem</h2>
-        <div class="contact-section">
-            <p>Whether your team is drowning in AI slop or you're ready to ship your first AI feature, let's talk.</p>
-            <p>Email: <a href="mailto:andreas@bayerautomation.com">andreas@bayerautomation.com</a></p>
-        </div>
-    
-        <a href="#top" class="back-to-top">Back to top</a>
-    </div>
-
-    <div class="section" id="technology">
-        <div class="stack-container">
-          <div class="stack" id="tech-stack">
-            <div class="stack-inner">
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>LangGraph</span>
-              <span>LangChain</span>
-              <span>CrewAI</span>
-              <span>MCP</span>
-              <span>Claude</span>
-              <span>OpenAI</span>
-              <span>Anthropic</span>
-              <span>Bedrock</span>
-              <span>Cursor</span>
-              <span>HuggingFace</span>
-              <span>Agentic Systems</span>
-              <span>Pinecone</span>
-              <span>Qdrant</span>
-              <span>Postgres</span>
-              <span>Redis</span>
-              <span>Docker</span>
-              <span>AWS</span>
-              <span>GCP</span>
-              <span>Terraform</span>
-              <span>React</span>
-              <span>TypeScript</span>
-            </div>
-          </div>
-        </div>
-    </div>    
-
-    <div class="section">
-        <h2>Trusted Clients</h2>
-        <div class="logo-row">
-          <a href="https://talentwell.ai" target="_blank"><img src="talentwell-logo-text.png" alt="TalentWell" class="consult-logo" /></a>
-          <a href="https://sedrasolutions.com" target="_blank"><img src="sedra-solutions-logo.png" alt="Sedra Solutions" class="consult-logo" /></a>
-          <a href="https://zipply.io" target="_blank"><img src="zipply-logo-text.png" alt="Zipply" class="consult-logo" /></a>
-          <a href="https://www.thearrow.app" target="_blank"><img src="arrow-logo.png" alt="The Arrow" class="consult-logo" /></a>
-          <a href="https://quantimon.com" target="_blank"><img src="quantimon-logo.png" alt="Quantimon" class="consult-logo" /></a>
-        </div>
-      </div>    
-
-    <div class="section">
-      <a href="#top" class="back-to-top">Back to top</a>
-    </div>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Bayer Automation. All Rights Reserved.</p>
-    </footer>    
+  <main>
+    <h1>Bayer Automation</h1>
+    <p class="tagline">Financial Technology · Software Engineering · Risk &amp; Compliance</p>
+    <h2>Website under construction</h2>
+    <p>We’re updating our website. Please check back soon.</p>
+    <p class="contact"><a href="mailto:andreas@bayerautomation.com">andreas@bayerautomation.com</a></p>
+  </main>
 </body>
 </html>
