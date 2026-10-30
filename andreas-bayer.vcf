@@ -3,11 +3,11 @@ VERSION:3.0
 N:Bayer;Andreas;;;
 FN:Andreas Bayer
 ORG:Bayer Automation
-TITLE:AI Consulting & Engineering Leadership
+TITLE:Software Architecture & Engineering Leadership
 EMAIL:andreas@bayerautomation.com
 TEL;TYPE=CELL:+1-415-710-1323
-PHOTO;TYPE=JPEG;VALUE=URI:https://bayerautomation.com/andreas-photo.jpg
+PHOTO;TYPE=JPEG;VALUE=URI:https://bayerautomation.com/andreas-photo.jpeg
 URL:https://bayerautomation.com
-item1.URL;type=pref:http://www.linkedin.com/in/andreas-bayer-7101323/
+item1.URL;type=pref:https://www.linkedin.com/in/andreas-bayer-7101323/
 item1.X-ABLabel:LinkedIn
 END:VCARD
